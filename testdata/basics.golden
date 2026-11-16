@@ -1,0 +1,26 @@
+SELECT
+  a,
+  b
+FROM
+  t
+
+SELECT
+  UserId,
+  Name
+FROM
+  Users
+
+SELECT
+  t.*,
+  count(*) AS n
+FROM
+  t
+
+SELECT
+  1;
+
+SELECT
+  a,
+  b
+FROM
+  t

@@ -1,0 +1,16 @@
+SELECT
+  dept,
+  count(*)
+FROM
+  emp
+GROUP BY
+  dept
+HAVING
+  count(*) > 5
+ORDER BY
+  dept DESC,
+  count(*)
+LIMIT
+  10
+OFFSET
+  20

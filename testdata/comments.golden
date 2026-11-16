@@ -1,0 +1,22 @@
+SELECT
+  a, -- first col
+  b
+FROM
+  t
+
+-- all users
+SELECT
+  *
+FROM
+  users
+
+SELECT
+  /* cols */ a
+FROM
+  t /* done */
+
+SELECT
+  '-- not a comment',
+  '/* nor this */'
+FROM
+  t

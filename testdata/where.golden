@@ -1,0 +1,55 @@
+SELECT
+  *
+FROM
+  t
+WHERE
+  a = 1
+  AND b = 2
+  OR c = 3
+
+SELECT
+  *
+FROM
+  t
+WHERE
+  age BETWEEN 18 AND 30
+  AND active = TRUE
+
+SELECT
+  *
+FROM
+  t
+WHERE
+  id IN (1, 2, 3)
+  AND lower(name) = 'x'
+
+SELECT
+  *
+FROM
+  t
+WHERE
+  (a = 1 OR b = 2)
+  AND c = 3
+
+SELECT
+  *
+FROM
+  t
+WHERE
+  a IS NOT NULL
+  AND b LIKE 'x%'
+
+SELECT
+  CASE WHEN a > 1 AND b < 2 THEN 'x' ELSE 'y' END AS r
+FROM
+  t
+
+SELECT
+  "select" AS `from`,
+  /* inline /* nested */ comment */ 1e-5 + -2 AS calc,
+  'it''s -- not a comment' AS str
+FROM
+  users
+WHERE
+  id IN (1, 2)
+  AND status != 'active'; --trailing comment

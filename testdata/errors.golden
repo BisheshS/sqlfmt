@@ -1,0 +1,28 @@
+error: 1:8: unterminated string
+
+error: 1:8: unterminated quoted identifier
+
+error: 1:8: unterminated quoted identifier
+
+error: 1:10: unterminated block comment
+
+error: 1:13: unclosed (
+
+error: 1:9: unmatched )
+
+error: 1:8: unclosed (
+
+error: 1:11: unmatched )
+1:18: unclosed (
+
+error: 1:8: CASE without END
+
+error: 1:10: END without CASE
+
+SELECT
+  t.end,
+  CASE WHEN a THEN 1 END
+FROM
+  t
+
+error: 3:11: unterminated string
